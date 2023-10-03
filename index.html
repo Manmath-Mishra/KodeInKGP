@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<header style=" background: whitesmoke;">
+  <nav style="display: flex;" >
+      <div class="logo">
+          <img src="img/logo.svg" alt="flipkart logo" >
+      </div>
+      <div class="search_div">
+          <input type="text" class="search" placeholder="  Search for Products,Brands and More" >
+          
+      </div>
+      <div class="nav_menu">
+        <button class="btn btn-secondary btn-sm " onclick=clik() type="button" style="background-color: white;color: black;border: 0;" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="img/Store.svg" alt="sign-in">
+          Become a Seller
+        </button>
+
+      </div>
+      
+      <div class="btn-group" class="nav_menu">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" style="background-color: white;color: black;border: 0;" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/sign-in.svg" alt="sign-in">
+            Sign In
+          </button>
+          <ul class="dropdown-menu">
+              
+                  <li><a class="dropdown-item" href="#">New Customer?    Sign UP</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">My Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Flipkart Plus Zone</a></li>
+                  <li><a class="dropdown-item" href="#">Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                  <li><a class="dropdown-item" href="#">Rewards</a></li>
+                  <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                
+          </ul>
+      </div>
+      <div class="nav_menu">
+        <button class="btn btn-secondary btn-sm " onclick=clik() type="button" style="background-color: white;color: black;border: 0;" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="img/cart.svg" alt="sign-in">
+          Cart
+        </button>
+
+      </div>
+      <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;color: black;border: 0;" id="hover_button">
+            <img src="img/dots.svg" alt="sign-in">
+          </button>
+          <ul class="dropdown-menu" id="hover_content">
+              
+                  <li><a class="dropdown-item" href="#">Notification Preferences</a></li>
+                  <li><a class="dropdown-item " href="#">Advertise</a></li>
+                  <li><a class="dropdown-item" href="#">24X7 Customer Care</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+
+                
+          </ul>
+      </div>
+    </nav></header>
+<body class="body">
+           
+    <section  style="display: grid-row-1;" class="head_image">
+        <div class="cover_image">
+            <img src="img/grocery.webp"alt=""><br><b>Grocery</b>
+        </div>
+        <div class="cover_image">
+            <img src="img/travel.webp" alt=""><br><b>Travel</b>
+        </div>
+        <div class="cover_image">
+            <img src="img/mobiles.webp" alt=""><br><b>Mobiles</b>
+            
+        </div>
+        <div class="cover_image">
+            <img src="img/fashion.webp" alt=""><br><b>Fashion</b>
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;color: black;border: 0; :hover{
+              rotate: 180;
+            }" id="hover_button">
+            </button>
+            <ul class="dropdown-menu" id="hover_content">
+                
+                    <li><a class="dropdown-item " href="#">Men's Top Wear</a></li>
+                    <li><a class="dropdown-item " href="#">Men's Bottom Wear</a></li>
+                    <li><a class="dropdown-item" href="#">Women Ethnic</a></li>
+                    <li><a class="dropdown-item" href="#">Men Footwear</a></li>            
+            </ul>
+        </div>
+
+    </section>
+    <br><br>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide_1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br>
+      <h2>Best In Electronics</h2>
+      <section style="display: flex;">
+        <div class="card-group">
+            <div class="card" style="border-radius: 1vw;border-color: black;">
+              <img src="img/e_1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Powerbanks</h5>
+                <p class="card-text">From ₹1149 onwards</p>
+                
+              </div>
+            </div>
+            <div class="card" style="border-radius: 1vw;border-color: black;">
+              <img src="img/e_2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Keyboards</h5>
+                <p class="card-text">From ₹299 onwards</p>
+                
+              </div>
+            </div>
+            <div class="card" style="border-radius: 1vw;border-color: black;">
+              <img src="img/e_3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">4-in-1-USB Type-C</h5>
+                <p class="card-text">From ₹1099 onwards</p>
+               
+              </div>
+            </div>
+            <div class="card" style="border-radius: 1vw;border-color: black;">
+                <img src="img/e_4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Printers</h5>
+                  <p class="card-text">From ₹2499 onwards</p>
+                 
+                </div>
+              </div>
+          </div>
+      </section><br><br>
+      <h2>New Styles For Her...</h2><br>
+      <div style="display: flex; height: 70vh;width: 100vw;" class="New">
+        
+        <div class="card" style="border-radius: 1vw;border-color  :black; width: 23vw;height: 40vh;">
+          <img src="img/s_1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: green;">Accessories Min 5% off</h5>
+            
+           
+          </div>
+        </div>
+        
+        <div class="card" style="border-radius: 1vw;border-color  :black; width: 22vw;height: 40vh;">
+          <img src="img/s_2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: green;">&nbsp;&nbsp;Jewellery 20% off</h5>
+            
+           
+          </div>
+          
+      
+      </div><div class="big" >
+        <img src="img/big banner.png" style="background-size: contain;height: 70vh;width: 60vw;" alt=""></div>
+      
+      </div>
+      
+      
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #1c2331"
+            >
+     
+      <br>
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">About</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <br>
+                <a href="#!" class="text-white">Contact us</a><br>           
+                <a href="#!" class="text-white">About Us</a><br>
+                <a href="#!" class="text-white">Careers</a><br>
+                <a href="#!" class="text-white">Flipkart Stories</a><br>
+                <a href="#!" class="text-white">Press</a><br>
+                <a href="#!" class="text-white">Flipkart Wholesale</a><br>
+                <a href="#!" class="text-white">Cleartrip</a><br>
+                <a href="#!" class="text-white">Corporate Information</a><br>
+              
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Help</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  <br>
+                  <a href="#!" class="text-white">Payments</a><br>           
+                  <a href="#!" class="text-white">Shipping</a><br>
+                  <a href="#!" class="text-white">Cancellation & returns</a><br>
+                  <a href="#!" class="text-white">FAQ</a><br>
+                  <a href="#!" class="text-white">Report Infringement</a><br>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Consumer Policy</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  <br>
+                  <a href="#!" class="text-white">Cancellation and Returns</a><br>           
+                  <a href="#!" class="text-white">Terms Of Use</a><br>
+                  <a href="#!" class="text-white">Security and Privacy</a><br>
+                  <a href="#!" class="text-white">Sitemap</a><br>
+                  <a href="#!" class="text-white">Grievance Redressal</a><br>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="separator"></div></div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Mail Us</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  /> <br>
+              <i class="fas fa-home mr-3"></i>Flipkart Internet Private Limited,<br>
+              <i class="fas fa-envelope mr-3"></i>Buildings Alyssa, Begonia & <br>
+              <i class="fas fa-phone mr-3"></i>Clove Embassy Tech Village <br>
+              <i class="fas fa-print mr-3"></i>Outer Ring Road, Devarabeesanahalli Village, <br>
+              <i class="fas fa-print mr-3"></i>Bengaluru, 560103, <br>
+              <i class="fas fa-print mr-3"></i>Karnataka, India <br>
+              <i class="fas fa-print mr-3"></i> CIN : U51109KA2012PTC066107  <br>
+              <i class="fas fa-print mr-3"></i> Telephone: <a href="tel:044-45614700">044-45614700</a><br>
+            </div>
+            
+              
+            </div>
+            <!-- Grid column -->
+          </div>
+      
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2007-2023 Flipkart.com <img src="img/footer cards.svg" alt="">
+        
+          
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  
+ 
+</body>
+</html>
